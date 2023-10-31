@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>_1538</title>
+
+        <script src="src/js/editor.js"></script>
+        <script src="src/js/const.js"></script>
+        <script src="src/js/authScreen.js"></script>
+        <script src="src/js/game.js"></script>
+
+        <link rel="stylesheet" href="src/fonts.css">
+        <link rel="stylesheet" href="src/common.css">
+        <link rel="stylesheet" href="src/authScreen.css">
+        <link rel="stylesheet" href="src/editorScreen.css">
+    </head>
+
+    <body style="overflow: hidden">
+        <div id="auth" class="container">
+            <h1 id="auth_header">_1538 RPG</h1>
+            <input type="text" id="auth_login" class="abs forminput" placeholder="Ваш логин">
+            <input type="password" id="auth_password" class="abs forminput" placeholder="Ваш пароль">
+            <button class="abs formbutton" id="auth_submit1" onclick="onSignIn()">Войти</button>
+            <button class="abs formbutton" id="auth_submit2" onclick="onSignUp()">Новый</button>
+        </div>
+        <div id="game" class="container" hidden>
+            <canvas id="canvas" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;"></canvas>
+        </div>
+        <div id="editor" class="container" hidden>
+            <h1 id="editor_header">MAKE A HERO</h1>
+            <input type="text" id="editor_name" class="abs forminput" placeholder="Ваше имя">
+            <button class="abs formbutton" id="editor_class_prev" onclick="minusClass()">&lt</button>
+            <h3 id="editor_class" class="abs">Лучник</h3>
+            <button class="abs formbutton" id="editor_class_next" onclick="plusClass()">&gt;</button>
+            <button class="abs formbutton" id="editor_end" onclick="sendEditorData()">Начать игру</button>
+        </div>
+        <div hidden id="img_c">
+            <img src="src/img/auth.png" id="img/auth.png">
+        </div>
+    </body>
+</html>

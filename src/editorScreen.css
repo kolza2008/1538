@@ -1,0 +1,41 @@
+#editor_header {
+    font-family:'PixelAnchorJack';
+    text-align: center;
+    font-size:  6vw;
+    text-shadow: 5px 2px 3px #ffffff;
+    top: 1%;
+}
+#editor_name {
+    left: 33%;
+    top: 30%;
+    width: 34%;
+    height: 5%;
+}
+#editor_class_prev {
+    left: 2%;
+    top: 40%;
+    width: 3%;
+    height: 5%;
+}
+#editor_class_next {
+    left: 24.5%;
+    top: 40%;
+    width: 3%;
+    height: 5%;
+}
+#editor_class {
+    left: 7%;
+    top: 40%;
+    width: 8%;
+    height: 5%;
+    font-family:'BetterVCR';
+    font-size:  3.5vw;
+    margin: 0;
+    vertical-align: middle;
+}
+#editor_end {
+    left: 40%;  
+    top: 80%;
+    width: 20%;
+    height: 5%;
+}

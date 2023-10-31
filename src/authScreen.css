@@ -1,0 +1,42 @@
+#auth_login {
+    left: 33%;
+    top: 40%;
+    width: 34%;
+    height: 5%;
+}
+#auth_password {
+    left: 33%;
+    top: 50%;
+    width: 34%;
+    height: 5%;
+}
+#auth_submit1 {
+    left: 33%;  
+    top: 60%;
+    width: 15%;
+    height: 5%;
+}
+#auth_submit2 {
+    left: 52%;  
+    top: 60%;
+    width: 15%;
+    height: 5%;
+}
+#auth {
+    background-image: url(img/auth.png);
+    background-size: cover;
+}
+#auth_header {
+    font-family:'PixelAnchorJack';
+    text-align: center;
+    font-size:  6vw;
+    text-shadow: 5px 2px 3px #ffffff;
+}
+.forminput {
+    font-size: 1vw;
+    font-family:'BetterVCR';
+}
+.formbutton {
+    font-size: 1vw;
+    font-family:'BetterVCR';
+}
