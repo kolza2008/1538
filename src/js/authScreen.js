@@ -13,7 +13,7 @@ function onSignIn() {
         if (response.status == 200) {
             return response.json();
         } else {
-            throw new Error(response.statusCode);
+            response.text().then((text) => alert(text))
         } 
     }).then((response) => {localStorage.setItem('API_TOKEN', response.token);prepareGame()}).catch((error) => {console.log(error);})
 };
@@ -33,7 +33,7 @@ function onSignUp() {
         if (response.status == 200) {
             alert("you are signed up. sign in, please")
         } else {
-            alert(response.message)
+            response.text().then((text) => alert(text))
         } 
     })
 };
